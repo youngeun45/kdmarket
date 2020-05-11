@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Header doc -->
+<title>경동시장</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=375,user-scalable=no">
+<meta name="description" content="" />
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link rel="shortcut icon" href="../resources/images/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png" />
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all" />
+<link rel="stylesheet" href="../resources/css/contents.css" media="all" />
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-1.3.0.min.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]>
+  <script src="../resources/js/lib/html5Shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div id="wrap">
+    <!-- skipNavi -->
+    <div id="skipNavi">
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <!-- //skipNavi -->
+    <!-- container -->
+    <div id="container">
+        <h3 id="pageTit" class="blind">장바구니</h3>
+        <div class="tit_area">
+            <button type="button" onclick="history.go(-1)" class="btn_back"><span>뒤로가기</span></button>
+            <h2>장바구니</h2>
+        </div>
+        <div class="inner">
+            <div class="cart_top">
+                <label class="checkbox">
+                    <input type="checkbox" name="" id="allCartChk">
+                    <i></i>
+                    <span class="lbl">전체선택 (4/4)</span>
+                </label>
+                <button type="button" class="btn_remove_cart">제거하기</button>
+            </div>
+            <div class="cart_cont">
+                <ul>
+                    <!-- package -->
+                    <li class="package_prd ">
+                        <p class="package_tit"><span class="cart_chk">
+                            <label class="checkbox">
+                                <input type="checkbox" name="cartChk" id="">
+                                <i></i>
+                            </label>
+                        </span>[우리경동마트] 신선 무농약 버섯 9종</p>
+                        <div>
+                            <dl class="cart_prd">
+                                <dt>
+                                    <a href="#">3.느타리버섯 느타리버섯 느타리버섯 느타리버섯 느타리버섯 느타리버섯</a> 
+                                </dt>
+                                <dd>
+                                    <div class="cart_img">
+                                        <a href="#"><img src="../resources/images/contents/@img_product_01.jpg" alt="상품이미지"></a>
+                                    </div>
+                                    <div class="cart_prd_info">
+                                        <span class="inp_spinner">							
+                                            <input type="text" id="" class="spinner input" value="1" formatType="number" />
+                                        </span>
+                                        <p><span>합계</span> <strong>119,000</strong>원</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <button type="button" class="btn_cart_close">제거 버튼</button>
+                        </div>
+                        <div>
+                            <dl class="cart_prd">
+                                <dt>
+                                    <a href="#">3.느타리버섯</a> 
+                                </dt>
+                                <dd>
+                                    <div class="cart_img">
+                                        <a href="#"><img src="../resources/images/contents/@img_product_01.jpg" alt="상품이미지"></a>
+                                    </div>
+                                    <div class="cart_prd_info">
+                                        <span class="inp_spinner">							
+                                            <input type="text" id="" class="spinner input" value="1" formatType="number" />
+                                        </span>
+                                        <p><span>합계</span> <strong>119,000</strong>원</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <button type="button" class="btn_cart_close">제거 버튼</button>
+                        </div>
+                    </li>
+                    <!-- no package , soldout-->
+                    <li class="soldout">
+                        <div>
+                            <dl class="cart_prd">
+                                <dt>
+                                    <span class="cart_chk">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="cartChk" id="">
+                                            <i></i>
+                                        </label>
+                                    </span>
+                                    <a href="#">[우리경동마트] 신선한 친환경 무농약감자 1kg </a> 
+                                </dt>
+                                <dd>
+                                    <div class="cart_img">
+                                        <a href="#"><img src="../resources/images/contents/@img_product_01.jpg" alt="상품이미지"></a>
+                                    </div>
+                                    <div class="cart_prd_info">
+                                        <span class="inp_spinner">							
+                                            <input type="text" id="" class="spinner input" value="1" formatType="number" />
+                                        </span>
+                                        <p><span>합계</span> <strong>119,000</strong>원</p>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <button type="button" class="btn_cart_close">제거 버튼</button>
+                        </div>
+                    </li>
+                    <!-- empty -->
+                    <li class="empty hide">
+                        장바구니에 담긴 상품이 없습니다.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cart_total_price">
+            <ul>
+                <li>
+                    <p><span>상품금액</span> <em><strong>26,200</strong> 원</em></p>
+                </li>
+                <li>
+                    <p><span>상품할인금액</span> <em><strong>6,200</strong> 원</em></p>
+                </li>
+                <li>
+                    <p><span>배송비</span> <em><strong>+ 3,000</strong> 원</em></p>
+                    <p class="fc_brown t_right mt10">10,800 원 추가주문 시, 무료배송</p>
+                </li>
+                <li class="last">
+                    <p><span>결제예정금액</span> <em><strong>29,200</strong> 원</em></p>
+                    <p class="fc_brown t_right mt10">*쿠폰은 다음화면인 ‘주문서’에서 확인가능합니다.</p>
+                </li>
+            </ul>
+        </div>
+            <div class="btm_btn_area">
+                <button type="button" class="button btn_black w_100 h55"><strong>주문하기 <span class="fc_gray">(126,300)</span></strong></button>
+            </div>
+    </div>
+    <!-- //container -->
+  </div>
+<script>
+    $(function(){
+        //spinner
+        spinnerUi(10);
+        //all check 
+        var $chk = $(document).find('input[name="cartChk"]');
+        $('#allCartChk').change(function(){
+            if($(this).is(":checked")){
+                $chk.attr('checked','checked')
+            }else {
+                $chk.removeAttr('checked')
+            }
+        })
+    })
+</script>
+</body>
+</html>

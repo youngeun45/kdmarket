@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]> <html class="lt-ie10 lt-ie9 lt-ie8" lang="ko"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="ko"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="ko"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="ko"> <!--<![endif]-->
+<head>
+<!-- Header doc -->
+<title>경동시장</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=1024,user-scalable=no">
+<style>
+#wrap{padding: 1em;min-width:1024px;box-sizing:border-box;padding: 0 100px;box-sizing: border-box;}
+h1{text-align: center;background: #f1f1f1;}
+.box {padding: 1em;border: 1px solid #ccc;margin: 1em 0;}
+.table {width: 100%;border-spacing:0px;border-collapse:collapse;}
+.table th,
+.table td {height: 35px;padding: 5px 10px;font-size: 0.875rem;border: 1px solid #ccc;}
+.table td.tc {text-align-last: center;}
+.table thead th {height: 30px;background: #f1f1f1;}
+.table a {text-decoration: underline;}
+.table .line td {border-top: 3px solid #ccc;}
+.table .endding {background: #ffc000 !important;color: #000;}
+.table .two {background: #eee !important;}
+.table .non{background: #ddd !important;}
+.table .top_line td {border-top: 3px solid #ccc;}
+.bg_add {background: #fefedc;}
+.bg_edit{background: #e6f1f1;}
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>경동시장 모바일 코딩리스트</h1>
+		<div class="box">
+			<ul class="txt_list">
+				<li><strong>문서타입</strong> : HTML5 / CSS3</li>
+				<li><strong>jquery 버전</strong> : jquery-1.12.4.min.js</li>
+				<li><strong>공통사항</strong> : 클래스 안에 "empty" 포함 = 결과없음 (.hide클래스로 노출/비노출)</li> 
+				<li><strong>include참고(.html생략)</strong><br>*  #header,.header_btm, #footer - main <br> * 없음  - cart,deliveryAddr,menuView,myDelvyList,payment,productQnaView<br> * .header_btm 만 - 나머지페이지 </li>
+				<li style="margin-top: 20px;">1차 공유(3/10) 이후 <strong class="bg_add">새로 추가된 페이지</strong>,<strong class="bg_edit">수정된 페이지</strong></li>
+			</ul>
+		</div>
+		<table class="table">
+			<colgroup>
+				<col style="width: 13%">
+				<col style="width: 13%">
+				<col style="width: 13%">
+				<col style="width: 13%">
+				<col style="width: 20%">
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">1뎁스</th>
+					<th scope="col">2뎁스</th>
+					<th scope="col">3뎁스</th>
+					<th scope="col">4뎁스</th>
+					<th scope="col">html</th>
+					<th scope="col">비고</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tc">공통</td>
+					<td>팝업</td>
+					<td></td>
+					<td></td>
+					<td class="bg_edit"><a href="./page/popup.html" target="_blank">./page/popup.html</a></td>
+					<td>사용되는 팝업 모음<br>
+						* <strong>수정내용</strong>: 팝업 추가 및 기존 팝업 수정 
+					</td>
+				</tr>
+				<tr>
+					<td class="tc" rowspan="6">메인</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td class="bg_edit"><a href="./main.html" target="_blank">./main.html</a></td>
+					<td> 
+						* 카테고리 아이콘 사이즈(전 페이지 공통) : 100 * 105 <br>
+						* 메인배너 사이즈 : 1080 * 650<br>
+						* 상품이미지 (전 페이지 공통) : 480 * 670<br>
+						* 기획전 배너 사이즈 : 1080 * 335<br>
+						* 이벤트 배너 사이즈 : 940 * 400<br>
+						* 메인배너 swiper script는 html하단에 작성 <br>
+						* 메인페이지에만 장바구니 숫자 표기함 <br>
+						* 메인페이지에만 header,footer 링크삽입함<br>
+						* <strong>수정내용</strong> : 검색인풋클릭시 페이지 이동, 좌측 gnb메뉴(로그인/비로그인 추가, 위시리스트추가, 이벤트 및 고객센터 링크 화면추가)
+					</td>
+				</tr>
+				<tr>
+					<td>검색</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/search.html" target="_blank">./page/search.html</a></td>
+					<td>
+						* "hot_keywords"(주석표시) : 인기검색어 <br>
+						* "search_result"(주석표시) : 검색결과 <br>
+						* "search_result_empty"(주석표시) : 검색결과없음 <br>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="3">약관</td>
+					<td>이용약관</td>
+					<td></td>
+					<td><a href="./page/termsUse.html" target="_blank">./page/termsUse.html</a></td>
+					<td>* 관리자에서 내용등록</td>
+				</tr>
+				<tr>
+					<td>개인정보처리방침</td>
+					<td></td>
+					<td><a href="./page/termsPrivacy.html" target="_blank">./page/termsPrivacy.html</a></td>
+					<td>* 관리자에서 내용등록</td>
+				</tr>
+				<tr>
+					<td>전자금융거래이용약관</td>
+					<td></td>
+					<td><a href="./page/termsEcommerce.html" target="_blank">./page/termsEcommerce.html</a></td>
+					<td>* 고객사 자료 수급시 퍼블에서 등록예정</td>
+				</tr>
+				<tr>
+					<td>위시리스트</td>
+					<td></td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/wishList.html" target="_blank">./page/wishList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc" rowspan="9">회원</td>
+					<td>로그인</td>
+					<td></td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/login.html" target="_blank">./page/login.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="2">아이디 찾기</td>
+					<td></td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/findId.html" target="_blank">./page/findId.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>본인인증으로 아이디 찾기</td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/findIdCert.html" target="_blank">./page/findIdCert.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="2">비밀번호 찾기</td>
+					<td></td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/findPw.html" target="_blank">./page/findPw.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>본인인증으로 비밀번호 찾기</td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/findPwCert.html" target="_blank">./page/findPwCert.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="4">회원가입</td>
+					<td>인트로</td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/joinStep1.html" target="_blank">./page/joinStep1.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>약관체크</td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/joinStep2.html" target="_blank">./page/joinStep2.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>휴대폰 인증</td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/joinStep3.html" target="_blank">./page/joinStep3.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>가입페이지</td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/joinStep4.html" target="_blank">./page/joinStep4.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc" rowspan="15">마이페이지</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/mypage.html" target="_blank">./page/mypage.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>내 쿠폰함</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/myCoupon.html" target="_blank">./page/myCoupon.html</a></td>
+					<td>* .coupon_empty : 쿠폰없음</td>
+				</tr>
+				<tr>
+					<td rowspan="2">주문배송내역</td>
+					<td>리스트</td>
+					<td></td>
+					<td class=" bg_edit"><a href="./page/myOrderList.html" target="_blank">./page/myOrderList.html</a></td>
+					<td> * <strong>수정내용</strong> : 취소중,반품완료 추가 <br>
+						* <strong>수정내용</strong> : 해당내용없음(empty) 추가</td>
+				</tr>
+				<tr>
+					<td>상세</td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/myOrderView.html" target="_blank">./page/myOrderView.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="2">배송지 관리</td>
+					<td>리스트</td>
+					<td></td>
+					<td><a href="./page/myDelvyList.html" target="_blank">./page/myDelvyList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>배송지 입력(수정)</td>
+					<td></td>
+					<td class="bg_edit"><a href="./page/deliveryAddr.html" target="_blank">./page/deliveryAddr.html</a></td>
+					<td>* 결제 - 배송지입력 페이지와 동일 <br>* <strong>수정내용</strong> : #pageTit 텍스트 수정</td>
+				</tr>
+				<tr>
+					<td rowspan="3">개인정보 관리</td>
+					<td>비밀번호확인</td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/privacyPwCheck.html" target="_blank">./page/privacyPwCheck.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>개인정보 입력(수정)</td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/privacyWrite.html" target="_blank">./page/privacyWrite.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>탈퇴하기</td>
+					<td></td>
+					<td class=" bg_add"><a href="./page/deactivate.html" target="_blank">./page/deactivate.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="6">고객센터</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/customerService.html" target="_blank">./page/customerService.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>공지사항</td>
+					<td></td>
+					<td><a href="./page/notice.html" target="_blank">./page/notice.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>자주묻는질문</td>
+					<td></td>
+					<td><a href="./page/faq.html" target="_blank">./page/faq.html</a></td>
+					<td>* select 설명: 해당 옵션값 내용 불러올 시 option 태그에 selected 입력해주시면 됩니다.</td>
+				</tr>
+				<tr>
+					<td rowspan="3">1:1문의</td>
+					<td>리스트</td>
+					<td><a href="./page/qnaList.html" target="_blank">./page/qnaList.html</a></td>
+					<td>* <strong>수정내용</strong> : .secret 비밀글아이콘 삭제</td>
+				</tr>
+				<tr>
+					<td>상세</td>
+					<td><a href="./page/qnaView.html" target="_blank">./page/qnaView.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>문의하기</td>
+					<td><a href="./page/qnaWrite.html" target="_blank">./page/qnaWrite.html</a></td>
+					<td></td>
+				</tr>
+				
+				<tr>
+					<td class="tc" rowspan="3">메뉴</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/menuList.html" target="_blank">./page/menuList.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="2">상세</td>
+					<td></td>
+					<td></td>
+					<td class="bg_edit"><a href="./page/menuView.html" target="_blank">./page/menuView.html</a></td>
+					<td>
+						* 구매하기 버튼 클릭시 장바구니 옵션레이어 노출<br>(html하단에 script작성) <br>
+						* 상품문의 -> 상품문의작성 클릭시 문의등록레이어 노출<br>(html하단에 script작성) <br>
+						* <strong>수정내용</strong> : spinner value="1" 에서 0으로 수정
+					</td>
+				</tr>
+				<!-- <tr>
+					<td>상품문의 전체리스트</td>
+					<td><a href="./page/productQnaList.html" target="_blank">./page/productQnaList.html</a></td>
+					<td>중간에 캔슬된 페이지 2/26</td>
+				</tr> -->
+				<tr>
+					<td>상품문의 상세</td>
+					<td></td>
+					<td><a href="./page/productQnaView.html" target="_blank">./page/productQnaView.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tc">장바구니</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class=" bg_edit"><a href="./page/cart.html" target="_blank">./page/cart.html</a></td>
+					<td>
+						* "package", "no package,soldout","empty"(주석표시) 구분<br>
+						* html하단에 spinner script 작성함. (spinnerUi(10) = 10 max)<br>
+						* <strong>수정내용</strong> : 하단 script추가 및 input name수정
+					</td>
+				</tr>
+				<tr>
+					<td class="tc" rowspan="2">결제</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="bg_edit"><a href="./page/payment.html" target="_blank">./page/payment.html</a></td>
+					<td>* <strong>수정내용</strong> : 배송메시지 저장버튼에 onclick 추가 (닫기)</td>
+				</tr>
+				<tr>
+					<td>배송지입력 </td>
+					<td></td>
+					<td></td>
+					<td class="bg_edit"><a href="./page/deliveryAddr.html" target="_blank">./page/deliveryAddr.html</a></td>
+					<td>* <strong>수정내용</strong> : #pageTit 텍스트 수정</td>
+				</tr>
+				<tr>
+					<td class="tc" rowspan="2">이벤트</td>
+					<td>리스트</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/eventlist.html" target="_blank">./page/eventlist.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>상세</td>
+					<td></td>
+					<td></td>
+					<td><a href="./page/eventView.html" target="_blank">./page/eventView.html</a></td>
+					<td></td>
+				</tr>
+            </tbody>
+        </table>
+  </div>
+</body>
+</html>

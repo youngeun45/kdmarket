@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+ <html lang="ko">
+<head>
+<!-- Header doc -->
+<title>경동시장</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=375,user-scalable=no">
+<meta name="description" content="" />
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./resources/images/favicon.png" />
+<!-- style -->
+<link rel="stylesheet" href="./resources/css/common.css" media="all" />
+<link rel="stylesheet" href="./resources/css/contents.css" media="all" />
+<!-- javascript -->
+<script src="./resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="./resources/js/lib/jquery-migrate-1.3.0.min.js"></script>
+<script src="./resources/js/plugins.js"></script>
+<script src="./resources/js/ui.js"></script>
+<!--[if lt IE 9]>
+  <script src="./resources/js/lib/html5Shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div id="wrap">
+    <!-- skipNavi -->
+    <div id="skipNavi">
+      <a href="#container">본문 바로가기</a>
+      <a href="#gnb">주메뉴 바로가기</a>
+      <a href="#footer">사이트 정보 바로가기</a>
+    </div>
+    <!-- //skipNavi -->
+    <!-- header -->
+    <header id="header">
+      <div class="hd_logo_area">
+        <h1 id="logo">
+          <a href="/main.html">경동시장</a>
+        </h1>
+        <div class="main_search_wrap">
+          <button type="button">검색버튼</button>
+          <input type="text" name="" id="" class="input main_inp" placeholder="검색어를 입력하세요">
+        </div>
+      </div>
+      <div class="hd_gnb_area">
+        <div class="gnb_swiper swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide on"><a href="#">홈</a></li>
+            <li class="swiper-slide"><a href="#">베스트</a></li>
+            <li class="swiper-slide"><a href="#">기획전</a></li>
+            <li class="swiper-slide"><a href="#">이벤트</a></li>
+            <li class="swiper-slide"><a href="#">과일 &#9474; 견과</a></li>
+            <li class="swiper-slide"><a href="#">채소</a></li>
+            <li class="swiper-slide"><a href="#">쌀 &#9474; 잡곡</a></li>
+            <li class="swiper-slide"><a href="#">축산 &#9474; 계란</a></li>
+            <li class="swiper-slide"><a href="#">수산물 &#9474; 건어물</a></li>
+            <li class="swiper-slide"><a href="#">건강식품</a></li>
+            <li class="swiper-slide"><a href="#">반찬 &#9474; 간편식</a></li>
+            <li class="swiper-slide"><a href="#">수입식품관</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <header class="header_btm">
+      <ul>
+        <li class="sch_nav"><a href="./page/search.html">검색</a></li>
+        <li class="menu_nav"><a href="#">주메뉴</a></li>
+        <li class="home_nav"><a href="./main.html">홈</a></li>
+        <li class="mypage_nav"><a href="./page/mypage.html">마이페이지</a></li>
+        <li class="cart_nav"><a href="./page/cart.html">장바구니<i>999</i></a></li>
+      </ul>
+      <div class="side_nav_wrap">
+        <nav id="gnb">
+          <div class="nav_top">
+            <!-- 로그인했을때 -->
+            <div class="memeber_area">
+              <span class="nav_name">홍길동님</span>
+              <a href="./page/privacyPwCheck.html" class="nav_setting">설정</a>
+            </div>
+            <!-- 로그인안했을때 -->
+            <div class="non_memeber_area hide">
+              <p class="t_center">회원 가입하고<br>다양한 혜택을 받아보세요!</p>
+              <div class="btn_wrap mt25">
+                <button type="button" class="button btn_pink_radius h45">로그인</button>
+                <button type="button" class="button btn_black_radius h45">회원가입</button>
+              </div>
+            </div>
+            <!-- 닫기버튼 공통 -->
+            <button type="button" class="nav_close navClose">닫기</button>
+          </div>
+          <a href="./page/myOrderList.html" class="btn_order_wish_nav">최근 주문 상품</a>
+          <a href="./page/wishList.html" class="btn_order_wish_nav">위시리스트</a>
+          <div class="nav_list">
+            <ul>
+              <li><a href="#"><i><img src="./resources/images/common/ico_category_01.png" alt="과일견과"></i>과일 &#9474; 견</a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#">고구마</a></li>
+                    <li><a href="#">배추</a></li>
+                    <li><a href="#">오이</a></li>
+                    <li><a href="#">쌈채소</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#"><i><img src="./resources/images/common/ico_category_02.png" alt="채소"></i>채소</a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#">고구마</a></li>
+                    <li><a href="#">배추</a></li>
+                    <li><a href="#">오이</a></li>
+                    <li><a href="#">쌈채소</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#"><i><img src="./resources/images/common/ico_category_03.png" alt="쌀 잡곡"></i>쌀 &#9474; 잡곡</a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#">고구마</a></li>
+                    <li><a href="#">배추</a></li>
+                    <li><a href="#">오이</a></li>
+                    <li><a href="#">쌈채소</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#"><i><img src="./resources/images/common/ico_category_04.png" alt="축산 계란"></i>축산 &#9474; 계란</a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#">고구마</a></li>
+                    <li><a href="#">배추</a></li>
+                    <li><a href="#">오이</a></li>
+                    <li><a href="#">쌈채소</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#"><i><img src="./resources/images/common/ico_category_05.png" alt="수산물 건어물"></i>수산물 &#9474; 건어물</a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#">고구마</a></li>
+                    <li><a href="#">배추</a></li>
+                    <li><a href="#">오이</a></li>
+                    <li><a href="#">쌈채소</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#"><i><img src="./resources/images/common/ico_category_06.png" alt="건강식품"></i>건강식품</a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#">고구마</a></li>
+                    <li><a href="#">배추</a></li>
+                    <li><a href="#">오이</a></li>
+                    <li><a href="#">쌈채소</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#"><i><img src="./resources/images/common/ico_category_07.png" alt="반찬 간편식"></i>반찬 &#9474; 간편식</a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#">고구마</a></li>
+                    <li><a href="#">배추</a></li>
+                    <li><a href="#">오이</a></li>
+                    <li><a href="#">쌈채소</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#"><i><img src="./resources/images/common/ico_category_08.png" alt="수입식품관"></i>수입식품관</a>
+                <div class="sub_menu">
+                  <ul>
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#">고구마</a></li>
+                    <li><a href="#">배추</a></li>
+                    <li><a href="#">오이</a></li>
+                    <li><a href="#">쌈채소</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul>
+              <li><a href="./page/eventList.html" class="link"><i><img src="./resources/images/common/ico_event.png" alt="수입식품관"></i>이벤트</a></li>
+              <li><a href="./page/customerService.html" class="link"><i><img src="./resources/images/common/ico_center.png" alt="수입식품관"></i>고객센터</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p class="recently_prd_tit">최근 본 상품</p>
+        <div class="inner">
+          <ul class="prd_list">
+              <li>
+                  <div>
+                      <div class="prd_img"><img src="./resources/images/contents/@img_product_01.jpg" alt="상품이미지"></div>
+                      <div class="prd_info">
+                          <p class="tit">[우리경동마트]</p>
+                          <p class="txt">신선한 친환경 무농약 감자 1kg</p>
+                          <p class="cost"><strong>3,900</strong>원 <span><strong>4,900</strong>원</span></p>
+                      </div>
+                      <a href="#" class="prd_link">상세보기</a>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="prd_img"><img src="./resources/images/contents/@img_product_02.jpg" alt="상품이미지"></div>
+                      <div class="prd_info">
+                          <p class="tit">[우리경동마트]</p>
+                          <p class="txt">무농약 버섯9종</p>
+                          <p class="cost"><strong>1,900</strong>원 <span><strong>4,900</strong>원</span></p>
+                      </div>
+                      <a href="#" class="prd_link">상세보기</a>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="prd_img"><img src="./resources/images/contents/@img_product_01.jpg" alt="상품이미지"></div>
+                      <div class="prd_info">
+                          <p class="tit">[우리경동마트]</p>
+                          <p class="txt">신선한 친환경 무농약 감자 1kg</p>
+                          <p class="cost"><strong>3,900</strong>원 <span><strong>4,900</strong>원</span></p>
+                      </div>
+                      <a href="#" class="prd_link">상세보기</a>
+                  </div>
+              </li>
+              <li>
+                  <div>
+                      <div class="prd_img"><img src="./resources/images/contents/@img_product_02.jpg" alt="상품이미지"></div>
+                      <div class="prd_info">
+                          <p class="tit">[우리경동마트]</p>
+                          <p class="txt">무농약 버섯9종 무농약 버섯9종 무농약 버섯9종</p>
+                          <p class="cost"><strong>123,900</strong>원 <span><strong>45,900</strong>원</span></p>
+                      </div>
+                      <a href="#" class="prd_link">상세보기</a>
+                  </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- //header -->
+    <!-- container -->
+    <div id="container" class="main">
+      <h3 id="pageTit" class="blind">홈</h3>
+      <!-- main_banner -->
+      <section class="main_banner_wrap">
+        <!-- main banner image size : 1080 * 650 -->
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="#"><img src="./resources/images/main/@img_main_banner01.jpg" alt="우리몸엔 우리반찬 경동시장에서"></a></li>
+            <li class="swiper-slide"><a href="#"><img src="./resources/images/main/@img_main_banner02.jpg" alt="우리몸엔 우리반찬 경동시장에서"></a></li>
+            <li class="swiper-slide"><a href="#"><img src="./resources/images/main/@img_main_banner03.jpg" alt="우리몸엔 우리반찬 경동시장에서"></a></li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- icon_category -->
+      <section class="ico_category_wrap">
+        <!-- icon category (all) image size : 100 * 105 -->
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="#"><i><img src="./resources/images/common/ico_category_01.png" alt="과일견과"></i>과일 &#9474; 견과</a></li>
+            <li class="swiper-slide"><a href="#"><i><img src="./resources/images/common/ico_category_02.png" alt="채소"></i>채소</a></li>
+            <li class="swiper-slide"><a href="#"><i><img src="./resources/images/common/ico_category_03.png" alt="쌀잡곡"></i>쌀 &#9474; 잡곡</a></li>
+            <li class="swiper-slide"><a href="#"><i><img src="./resources/images/common/ico_category_04.png" alt="축산계란"></i>축산 &#9474; 계란</a></li>
+            <li class="swiper-slide"><a href="#"><i><img src="./resources/images/common/ico_category_05.png" alt="수산물건어물"></i>수산물 &#9474; 건어물</a></li>
+            <li class="swiper-slide"><a href="#"><i><img src="./resources/images/common/ico_category_06.png" alt="건강식품"></i>건강식품</a></li>
+            <li class="swiper-slide"><a href="#"><i><img src="./resources/images/common/ico_category_07.png" alt="반찬간편식대용식"></i>반찬 &#9474; 간편식</a></li>
+            <li class="swiper-slide"><a href="#"><i><img src="./resources/images/common/ico_category_08.png" alt="수입식품관"></i>수입식품관</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="best_prd_wrap">
+        <div class="inner">
+          <h4><span>KDM</span> Best</h4>
+          <!-- product (all) image size : 480 * 670 -->
+          <div class="swiper-container">
+            <ul class="swiper-wrapper prd_list">
+              <li class="swiper-slide">
+                <div>
+                  <div class="prd_img"><img src="./resources/images/contents/@img_product_01.jpg" alt="상품이미지"></div>
+                  <div class="prd_info">
+                    <p class="tit">[우리경동마트]</p>
+                    <p class="txt">신선한 친환경 무농약 감자 1kg</p>
+                    <p class="cost"><strong>3,900</strong>원 <span><strong>4,900</strong>원</span></p>
+                  </div>
+                  <a href="./page/menuView.html" class="prd_link">상세보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div>
+                  <div class="prd_img"><img src="./resources/images/contents/@img_product_02.jpg" alt="상품이미지"></div>
+                  <div class="prd_info">
+                    <p class="tit">[우리경동마트]</p>
+                    <p class="txt">무농약 버섯9종</p>
+                    <p class="cost"><strong>1,900</strong>원 <span><strong>4,900</strong>원</span></p>
+                  </div>
+                  <a href="#" class="prd_link">상세보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div>
+                  <div class="prd_img"><img src="./resources/images/contents/@img_product_01.jpg" alt="상품이미지"></div>
+                  <div class="prd_info">
+                    <p class="tit">[우리경동마트]</p>
+                    <p class="txt">신선한 친환경 무농약 감자 1kg</p>
+                    <p class="cost"><strong>3,900</strong>원 <span><strong>4,900</strong>원</span></p>
+                  </div>
+                  <a href="#" class="prd_link">상세보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div>
+                  <div class="prd_img"><img src="./resources/images/contents/@img_product_02.jpg" alt="상품이미지"></div>
+                  <div class="prd_info">
+                    <p class="tit">[우리경동마트]</p>
+                    <p class="txt">무농약 버섯9종 무농약 버섯9종 무농약 버섯9종</p>
+                    <p class="cost"><strong>123,900</strong>원 <span><strong>45,900</strong>원</span></p>
+                  </div>
+                  <a href="#" class="prd_link">상세보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div>
+                  <div class="prd_img"><img src="./resources/images/contents/@img_product_01.jpg" alt="상품이미지"></div>
+                  <div class="prd_info">
+                    <p class="tit">[우리경동마트]</p>
+                    <p class="txt">신선한 친환경 무농약 감자 1kg</p>
+                    <p class="cost"><strong>3,900</strong>원 <span><strong>4,900</strong>원</span></p>
+                  </div>
+                  <a href="#" class="prd_link">상세보기</a>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div>
+                  <div class="prd_img"><img src="./resources/images/contents/@img_product_02.jpg" alt="상품이미지"></div>
+                  <div class="prd_info">
+                    <p class="tit">[우리경동마트]</p>
+                    <p class="txt">무농약 버섯9종</p>
+                    <p class="cost"><strong>1,900</strong>원 <span><strong>4,900</strong>원</span></p>
+                  </div>
+                  <a href="#" class="prd_link">상세보기</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="plan_prd_wrap">
+        <h4 class="blind">기획전</h4>
+        <ul>
+          <li><a href="#"><img src="./resources/images/main/@img_plan_event_banner.jpg" alt="기획전 이미지"></a></li>
+          <li><a href="#"><img src="./resources/images/main/@img_plan_event_banner.jpg" alt="기획전 이미지"></a></li>
+          <li><a href="#"><img src="./resources/images/main/@img_plan_event_banner.jpg" alt="기획전 이미지"></a></li>
+        </ul>
+        <div class="more_area">
+          <a href="#">기획전 더보기</a>
+        </div>
+      </section>
+      <section class="main_event_wrap">
+        <div class="inner">
+          <h4>이벤트</h4>
+          <!-- event banner (all) image size : 940 * 400-->
+          <div class="swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="./page/eventView.html">
+                  <img src="./resources/images/main/@img_event_banner.jpg" alt="이벤트 이미지">
+                  <span class="tit">2020설 선물 마지막 할인 혜택! 2020설 선물 마지막 할인 혜택!</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./resources/images/main/@img_event_banner.jpg" alt="이벤트 이미지">
+                  <span class="tit">2020설 선물 마지막 할인 혜택!</span>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./resources/images/main/@img_event_banner.jpg" alt="이벤트 이미지">
+                  <span class="tit">2020설 선물 마지막 할인 혜택!</span>
+                </a>
+              </li>
+              <li class="swiper-slide more_slide"><a href="./page/eventList.html">이벤트 더보기</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>  
+    </div>
+    <!-- //container -->
+    <footer id="footer">
+        <h2 class="blind">사이트정보</h2>
+        <div class="foot_notice">
+          <div class="inner">
+            <ul>
+              <li><a href="./page/notice.html">공지사항</a></li>
+              <li><a href="./page/faq.html">자주하는 질문</a></li>
+              <li><a href="./page/customerService.html">고객센터</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot_info">
+          <div class="inner">
+            <button type="button" class="btn_info_tit">경동시장(주) 사업자 정보<i></i></button>
+          </div>
+          <div class="info_detail">
+            <div class="inner">
+              <table class="ft_table">
+                <caption>경동시장(주) 사업자 정보</caption>
+                <colgroup>
+                  <col style="width: 40%;">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">대표이사</th>
+                    <td>홍길동</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">개인정보 보호책임자</th>
+                    <td>홍길도</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">사업자등록번호</th>
+                    <td>123-45-654789 <a href="#">[사업자정보확인]</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">입점문의</th>
+                    <td><a href="#">입점문의하기</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">제휴문의</th>
+                    <td><a href="mailto:abc@abc.co.kr">abc@abc.co.kr</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">팩스</th>
+                    <td>02-1234-1234</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">이메일</th>
+                    <td><a href="mailto:abc@abc.co.kr">abc@abc.co.kr</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">주소</th>
+                    <td><address>서울 동대문구 왕산로 147</address></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">고객센터</th>
+                    <td>1644-1234(평일 9:00-18:00)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="foot_terms">
+          <div class="inner">
+            <ul>
+              <li><a href="./page/termsUse.html">이용약관</a></li>
+              <li><a href="./page/termsPrivacy.html">개인정보처리방침</a></li>
+              <li><a href="./page/termsEcommerce.html">전자금융거래이용약관</a></li>
+            </ul>
+            <p class="copyright">Copyright(c) 2020 kyongdongsijang All rights reserved</p>
+          </div>
+        </div>
+    </footer>
+    <!-- today popup -->
+    <div id="todayPop" class="pop_wrap pop_today">
+      <article class="popup">
+          <h1 class="blind">오늘의 팝업</h1>
+          <a href="#"><img src="./resources/images/main/@img_today_pop.jpg" alt="오늘의 팝업 이미지 550*750"></a>
+          <div class="today_pop_foot"> 
+            <label class="checkbox">
+              <input type="checkbox" class="todayChk">
+              <i></i>
+              <span class="lbl">오늘은 그만보기</span>
+            </label>
+            <p class="f_right"><button type="button" class="today_pop_close">닫기</button> </p>
+          </div>
+          <a href="#" class="btn_pop_close today_pop_close">팝업닫기</a>
+      </article>
+    </div>
+    <!-- //today popup -->
+  </div>
+<script>
+  $(function(){
+    mainBannerSwiper();
+    mainIcoSwiper();
+    mainBestSwiper();
+    mainEvtSwiper();
+    todayPopup();
+  })
+  var cookiedata = document.cookie;
+		function setCookie(name, value, expiredays) {
+			var todayDate = new Date();
+			todayDate.setDate(todayDate.getDate() + expiredays);
+			document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+		}
+  //today popup
+  function todayPopup() {
+			var $speed = 500;
+			var popList = [];
+			if ($('.pop_today').length > 0) {
+				$('.pop_today').each(function() {
+					var $id = $(this).attr('id');
+					popList.push($id);
+				});
+			}
+			$('.pop_today .today_pop_close').click(function(e) {
+        e.preventDefault();
+				var chk = $(this).closest('.pop_today').find('.todayChk'), $id = $(this).closest('.pop_today').attr('id');
+				if (chk.is(':checked')) {
+					setCookie($id, 'done', 1);
+				}
+				popClose($('#' + $id))
+			});
+			for ( var i in popList) {
+				var $tar = $('#' + popList[i]);
+				if (cookiedata.indexOf(popList[i] + '=done') < 0) {
+					popOpen($tar);
+				}
+			}
+  }
+  //main banner swiper
+  var mainBannerSwiper = function(){
+      $(window).load(function(){
+        var mainBSwiper = $('.main_banner_wrap .swiper-container').swiper({
+              pagination : '.main_banner_wrap .swiper-pagination',
+              calculateHeight : true,
+              autoplay : '4000',
+              loop : true,
+              paginationClickable : true
+          });
+      })
+  }
+  //main category icon swiper
+  var mainIcoSwiper = function(){
+      $(window).load(function(){
+        var mainISwiper = $('.ico_category_wrap .swiper-container').swiper({
+              slidesPerView: 'auto',
+              calculateHeight : true
+          });
+      })
+  }
+  //main best product swiper
+  var mainBestSwiper = function(){
+      $(window).load(function(){
+        var mainBeSwiper = $('.best_prd_wrap .swiper-container').swiper({
+              slidesPerView: 'auto',
+              calculateHeight : true,
+              slidesPerView: 2
+          });
+      })
+  }
+  //main event banner swiper
+  var mainEvtSwiper = function(){
+      var mainEvSwiper = $('.main_event_wrap .swiper-container').swiper({
+          calculateHeight: true,
+          resizeReInit: true
+      });
+  }
+  
+  </script>
+</body>
+</html>

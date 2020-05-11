@@ -1,0 +1,37 @@
+/* @font-face {
+    font-family: 'Nanum Square';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://cdn.rawgit.com/hiun/NanumSquare/master/NanumSquareR.eot);
+    src: local('Nanum Square Regular'),
+         local('NanumSquareR'),
+         url(https://cdn.rawgit.com/hiun/NanumSquare/master/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+         url(https://cdn.rawgit.com/hiun/NanumSquare/master/NanumSquareR.woff2) format('woff2'),
+         url(https://cdn.rawgit.com/hiun/NanumSquare/master/NanumSquareR.woff) format('woff'),
+         url(https://cdn.rawgit.com/hiun/NanumSquare/master/NanumSquareR.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Nanum Square';
+    font-style: bold;
+    font-weight: 700;
+    src: url(https://cdn.rawgit.com/hiun/NanumSquare/master/NanumSquareB.eot);
+    src: local('Nanum Square Bold'),
+         local('NanumSquareB'),
+         url(https://cdn.rawgit.com/hiun/NanumSquare/master/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+         url(https://cdn.rawgit.com/hiun/NanumSquare/master/NanumSquareB.woff2) format('woff2'),
+         url(https://cdn.rawgit.com/hiun/NanumSquare/master/NanumSquareB.woff) format('woff'),
+         url(https://cdn.rawgit.com/hiun/NanumSquare/master/NanumSquareB.ttf) format('truetype');
+  } */
+ /* @font-face {
+    font-family: 'Nanum Square';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/NanumSquareR.eot);
+    src: local('Nanum Square Regular'),
+         local('NanumSquareR'),
+         url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+         url(../font/NanumSquareR.woff2) format('woff2'),
+         url(../font/NanumSquareR.woff) format('woff'),
+         url(../font/NanumSquareR.ttf) format('truetype');
+  }  */

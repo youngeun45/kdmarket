@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Header doc -->
+<title>경동시장</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=375,user-scalable=no">
+<meta name="description" content="" />
+<meta name="apple-mobile-web-app-title" content="">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta name="twitter:title" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:image" content="">
+<meta name="twitter:description" content="">
+<link rel="shortcut icon" href="../resources/images/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="../resources/images/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../resources/images/favicon.png" />
+<!-- style -->
+<link rel="stylesheet" href="../resources/css/common.css" media="all" />
+<link rel="stylesheet" href="../resources/css/contents.css" media="all" />
+<!-- javascript -->
+<script src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+<script src="../resources/js/lib/jquery-migrate-1.3.0.min.js"></script>
+<script src="../resources/js/plugins.js"></script>
+<script src="../resources/js/ui.js"></script>
+<!--[if lt IE 9]>
+  <script src="../resources/js/lib/html5Shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div id="wrap" class="pb0">
+    <!-- skipNavi -->
+    <div id="skipNavi">
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <!-- //skipNavi -->
+    <!-- container -->
+    <div id="container">
+        <h3 id="pageTit" class="blind">주문하기</h3>
+        <div class="tit_area">
+            <button type="button" onclick="history.go(-1)" class="btn_back"><span>뒤로가기</span></button>
+            <h2>주문하기</h2>
+        </div>
+        <div class="payment_cont">
+            <section class="order_info">
+                <h4>주문 상품 내역<button type="button" class="toggle-btn">주문상품내역 펼치기</button></h4>
+                <div class="toggle-area">
+                    <div class="order_prd">
+                        <span class="order_prd_img">
+                            <img src="../resources/images/contents/@img_product_02.jpg" alt="상품이미지">
+                        </span>
+                        <ul>
+                            <li class="pkg_tit">[경동상회] KD표 보쌈김치 3종</li>
+                            <li><p>KD표 보쌈김치 500g</p>25,000원 &#9474; 1개</li>
+                            <li><p>KD표 보쌈김치 300g</p>20,000원 &#9474; 2개</li>
+                        </ul>
+                    </div>
+                    <div class="order_prd">
+                        <span class="order_prd_img">
+                            <img src="../resources/images/contents/@img_product_02.jpg" alt="상품이미지">
+                        </span>
+                        <ul>
+                            <li><p>KD표 보쌈김치 500g</p>25,000원 &#9474; 1개</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="orderer_info">
+                <h4>주문자 정보 </h4>
+                <div>
+                    <table>
+                        <caption>주문자 정보</caption>
+                        <colgroup>
+                            <col style="width:80px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">이름</th>
+                                <td>김경동</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">전화</th>
+                                <td>010-1234-1234</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="fc_gray">주문자 정보 변경은 <strong class="fc_black">개인정보 수정</strong> 메뉴에서 가능합니다.</p>
+                </div>
+            </section>
+            <section class="delvy_info">
+                <h4>배송지 정보</h4>
+                <div class="delvy_tit">
+                    <strong>우리집</strong> <span class="selected_addr">기본배송지</span>
+                    <button type="button" class="right_pop_link delvyAddrOpen">배송지 변경</button>
+                </div>
+                <div class="delvy_tbl">
+                    <table>
+                        <caption>배송지 정보</caption>
+                        <colgroup>
+                            <col style="width:80px">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">배송지</th>
+                                <td>[03500] 서울시 은평구 증산로 251 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">상세주소</th>
+                                <td>경동아파트 100동 1000호</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">연락처</th>
+                                <td>010-1234-1234</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="delvy_msg_area">
+                    <p>배송메시지 <button type="button" class="right_pop_link delvyMsgOpen">선택</button></p>
+                    <!-- 메시지 등록시 hide 클래스 삭제 필요 -->
+                    <p class="msg hide"><strong>오시기 전에 연락 꼭 주시고 와주세요 ~ 감사합니다. !!오시기 전에 연락 꼭 주시고 와주세요 ~ 감사합니다. !!</strong></p>
+                </div>
+            </section>
+            <!-- s:쿠폰영역 추가...20/04/14 Aida -->
+            <section class="pay_coupon_area">
+                <h4>쿠폰</h4>
+                <ul>
+                    <li>
+                        <div class="inp_tbl col2 mb10">
+                            <div>
+                                <span class="wid4"><input type="text" class="input" placeholder="쿠폰코드를 입력해 주세요." title="쿠폰코드를 입력해 주세요."></span>
+                                <span><button type="button" class="button btn_gray h40">적용</button></span>
+                            </div>
+                        </div>
+                        <p>※ 사용하시고자 하는 쿠폰번호를 상단 입력박스에 올바르게 입력 후 우측에 쿠폰 버튼을 클릭하시면 할인금액이 적용됩니다.</p>
+                    </li>
+                    <li>
+                        <a href="#popupCouponBox" class="ui-pop-open button btn_open_coupon h38">내 쿠폰함 쿠폰 사용하기</a>
+                        <p>※ 상단 내 쿠폰함에서 사용하기 영역을 클릭하시면 뜨는 팝업창에서 자동발급된 쿠폰을 사용하여 할인을 받으실 수 있습니다.</p>
+                    </li>
+                    <li class="apply_coupon">
+                        <!-- <span>[현재 적용 쿠폰]</span> <div><strong>회원가입 5,000원 할인 쿠폰 회원가입 5,000원 할인 쿠폰</strong></div><div class="mt10 t_center"><button type="button" class="button btn_bd_gray w_100">취소</button></div> -->
+                        <span>[현재 적용 쿠폰]</span>
+                        <strong>회원가입 5,000원 할인 쿠폰</strong>
+                        <button type="button" class="button btn_bd_gray btn_cancle">취소</button>
+                    </li>
+                </ul>
+            </section>
+            <!-- e:쿠폰영역 추가...20/04/14 Aida -->
+            <section class="order_price">
+                <h4>결제금액</h4>
+                <ul>
+                    <li>
+                        <span>주문금액</span><em><strong>100,000</strong> 원</em>
+                    </li>
+                    <li>
+                        <span>할인</span><em><strong>0</strong> 원</em>
+                    </li>
+                    <li>
+                        <span>배송비</span><em><strong>3,000</strong> 원</em>
+                    </li>
+                    <li>
+                        <span>쿠폰</span><em><strong>0</strong> 원</em>
+                    </li>
+                    <li class="last">
+                        <span>최종결제금액</span><em><strong>103,000</strong> 원</em>
+                    </li>
+                </ul>
+            </section>
+            <!-- <section class="pay_type">
+                <h4>결제수단</h4>
+                <ul>
+                    <li class="credit">
+                        <label><input type="radio" name="pay_type_rdo" id="" checked><span>신용카드</span></label>
+                    </li>
+                    <li class="bank_transfer">
+                        <label><input type="radio" name="pay_type_rdo" id=""><span>계좌이체</span></label>
+                    </li>
+                    <li class="m_pay">
+                        <label><input type="radio" name="pay_type_rdo" id=""><span>휴대폰 결제</span></label>
+                    </li>
+                    <li class="bank_deposit">
+                        <label><input type="radio" name="pay_type_rdo" id=""><span>무통장입금</span></label>
+                    </li>
+                </ul>
+            </section> -->
+            <dl class="order_privacy_chk_area">
+                <dt>개인정보 수집 및 이용동의</dt>
+                <dd>
+                    <label class="checkbox">
+                        <input type="checkbox" name="" id="">
+                        <i></i>
+                        <span class="lbl">결제 진행 필수 동의</span>
+                    </label>
+                    <a href="#popupPrivacy" class="ui-pop-open right_pop_link">약관보기</a>
+                </dd>
+            </dl>
+            <div class="btn_wrap">
+                <button type="button" class="button btn_black w_100 h60">결제하기</button>
+            </div>
+        </div>
+        <!-- 배송지 리스트 슬라이드 팝업-->
+        <article class="delvy_list_layer layer_pop">
+            <h4>배송지 리스트</h4>
+            <div class="delvy_info layer_inner">
+                <ul>
+                    <li>
+                        <div class="delvy_tit">
+                            <strong>우리집</strong> 
+                            <label class="delvy_addr_sel_rdo"><input type="radio" name="delvyRdo" id="" checked/><i></i></label>
+                            <button type="button" class="btn_remove_delvy">제거하기</button>
+                        </div>
+                        <div class="delvy_tbl">
+                            <table>
+                                <caption>배송지 정보</caption>
+                                <colgroup>
+                                    <col width=90px>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">배송지</th>
+                                        <td>[03500] 서울시 은평구 증산로 251 </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">상세주소</th>
+                                        <td>경동아파트 100동 1000호</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">연락처</th>
+                                        <td>010-1234-1234</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="btn_wrap">
+                                <button type="button" class="button w100">수정</button>
+                                <button type="button" class="button btn_black w100 ml20">선택</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="delvy_tit">
+                            <strong>회사</strong> 
+                            <label class="delvy_addr_sel_rdo"><input type="radio" name="delvyRdo" id=""/><i></i></label>
+                            <button type="button" class="btn_remove_delvy">제거하기</button>
+                        </div>
+                        <div class="delvy_tbl">
+                            <table>
+                                <caption>영은 정보</caption>
+                                <colgroup>
+                                    <col width=80%>
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">배송지</th>
+                                        <td>[03500] 서울시 은평구 증산로 251 </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">상세주소</th>
+                                        <td>경동아파트 100동 1000호</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">연락처</th>
+                                        <td>010-1234-1234</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="btn_wrap">
+                                <button type="button" class="button w100">수정</button>
+                                <button type="button" class="button btn_black w100 ml20">선택</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="delvy_tit">
+                            <strong>친구네집</strong> 
+                            <label class="delvy_addr_sel_rdo"><input type="radio" name="delvyRdo" id=""/><i></i></label>
+                            <button type="button" class="btn_remove_delvy">제거하기</button>
+                        </div>
+                        <div class="delvy_tbl">
+                            <table>
+                                <caption>배송지 정보</caption>
+                                <colgroup>
+                                    <col style="width:80px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">배송지</th>
+                                        <td>[03500] 서울시 은평구 증산로 251 </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">상세주소</th>
+                                        <td>경동아파트 100동 1000호</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">연락처</th>
+                                        <td>010-1234-1234</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="btn_wrap">
+                                <button type="button" class="button w100">수정</button>
+                                <button type="button" class="button btn_black w100 ml20">선택</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="list_empty hide">
+                    등록된 배송지가 없습니다.
+                </div>
+            </div>
+            <div class="btn_wrap add_delvy">
+                <a href="../page/deliveryAddr.html" class="button w_100 btn_brown"><i></i>배송지 추가</a>
+            </div>
+            <button type="button" class="btn_layer_close delvyClose">배송지리스트 닫기</button>
+        </article>
+        <!-- 배송메시지 선택 슬라이드 팝업 -->
+        <article class="delvy_msg_layer layer_pop">
+            <h4>배송지메시지 선택</h4>
+            <div class="layer_inner">
+                <ul class="delvy_msg_list">
+                    <li>
+                        <label class="msg_radio">
+                            <input type="radio" name="msgRdo" id="" checked/><span class="lbl">없음</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="msg_radio">
+                            <input type="radio" name="msgRdo" id=""/><span class="lbl">부재 시 연락주세요</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="msg_radio">
+                            <input type="radio" name="msgRdo" id=""/><span class="lbl">부재 시 문 앞에 놓아주세요</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="msg_radio">
+                            <input type="radio" name="msgRdo" id=""/><span class="lbl">부재시 경비실에 맡겨주세요</span>
+                        </label>
+                    </li>
+                    <li>
+                        <div class="msg_rdo_inp"><p>직접입력</p><textarea name="" id="" class="textarea rdo_msg_txt"></textarea></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn_wrap">
+                <button type="button" class="button btn_gray h45  delvyMsgClose">취소</button>
+                <button type="button" class="button btn_black h45" onclick="$(function(){$('body').removeClass('dmsg_layer_open');})">저장</button>
+            </div>
+            <button type="button" class="btn_layer_close delvyMsgClose">배송지리스트 닫기</button>
+        </article>
+        <div id="popupPrivacy" class="pop_wrap">
+            <article class="popup">
+                <div class="pop_head">
+                    <h1>개인정보 약관</h1>
+                </div>
+                <div class="pop_cont">
+                    <textarea name="" id="" class="textarea" readonly>
+개인정보약관
+                    </textarea>
+                </div>
+                <a href="#" class="btn_pop_close ui-pop-close">팝업닫기</a>
+            </article>
+        </div>
+        <!-- s:쿠폰팝업 추가...20/04/14 Aida -->
+        <div id="popupCouponBox" class="pop_wrap">
+            <article class="popup">
+                <div class="pop_head">
+                    <h1>내 쿠폰함</h1>
+                </div>
+                <div class="pop_cont pop_coupon_list">
+                    <ul class="hide">
+                        <li>
+                            <label class="coupon_rdo">
+                                <input type="radio" name="couponRadio" id="">
+                                <strong>
+                                    <i><img src="../resources/images/contents/img_coupon.png" alt="쿠폰이미지"></i>
+                                    <span class="bold">5,000원 할인</span>
+                                    <span>2020-12-31까지 사용 가능</span>
+                                    <span>사용상태: 미사용</span>
+                                </strong>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="coupon_rdo">
+                                <input type="radio" name="couponRadio" id="">
+                                <strong>
+                                    <i><img src="../resources/images/contents/img_coupon.png" alt="쿠폰이미지"></i>
+                                    <span class="bold">5,000원 할인</span>
+                                    <span>2020-12-31까지 사용 가능</span>
+                                    <span>사용상태: 미사용</span>
+                                </strong>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="coupon_rdo">
+                                <input type="radio" name="couponRadio" id="">
+                                <strong>
+                                    <i><img src="../resources/images/contents/img_coupon.png" alt="쿠폰이미지"></i>
+                                    <span class="bold">5,000원 할인</span>
+                                    <span>2020-12-31까지 사용 가능</span>
+                                    <span>사용상태: 미사용</span>
+                                </strong>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="coupon_rdo">
+                                <input type="radio" name="couponRadio" id="">
+                                <strong>
+                                    <i><img src="../resources/images/contents/img_coupon.png" alt="쿠폰이미지"></i>
+                                    <span class="bold">5,000원 할인</span>
+                                    <span>2020-12-31까지 사용 가능</span>
+                                    <span>사용상태: 미사용</span>
+                                </strong>
+                            </label>
+                        </li>
+                    </ul>
+                    <!-- empty -->
+                    <div class="list_empty">
+                        내 쿠폰함에 쿠폰이 없습니다.
+                    </div>
+                    <div class="pop_btn_wrap mt20">
+                        <button type="button" class="button btn_dart_brown w150 h45">선택</button>
+                    </div>
+                </div>
+                <a href="#" class="btn_pop_close">팝업닫기</a>
+            </article>
+        </div>
+        <!-- e:쿠폰팝업 추가...20/04/14 Aida -->
+    </div>
+    <!-- //container -->
+  </div>
+<script>
+    $(function(){
+        $('.toggle-btn').click(function(){
+            $(this).parents('section').toggleClass('on').find('.toggle-area').slideToggle();
+        })
+        //delivery address list layer open
+         $('.delvyAddrOpen').click(function(){
+            if(!$('body').hasClass('delvy_layer_open')){
+                $('body').addClass('delvy_layer_open');
+            }
+        })
+        //delivery address list layer close
+        $('.delvyClose').click(function(){
+            $('body').removeClass('delvy_layer_open');
+        })
+        //delivery message layer open
+        $('.delvyMsgOpen').click(function(){
+            if(!$('body').hasClass('dmsg_layer_open')){
+                $('body').addClass('dmsg_layer_open');
+            }
+        })
+        //delivery message list layer close
+        $('.delvyMsgClose').click(function(){
+            $('body').removeClass('dmsg_layer_open');
+            radioTxtReset();
+        })
+        radioTxtUI();
+    })
+    var radioTxtUI = function(){
+        var $rdo = $('.delvy_msg_list').find('input[type="radio"]');
+        $('.rdo_msg_txt').on('focus',function(){
+            $rdo.each(function(){
+                if($(this).is(':checked')){
+                    $(this).removeAttr('checked');
+                }
+            })
+            $(this).parent().addClass('checked');
+        })
+        $rdo.click(function(){
+            $(this).change(function(){
+                $('.rdo_msg_txt').parent().removeClass('checked')
+                $(document).find('.msg_rdo_inp textarea').val('');
+            })
+        })
+    }
+    var radioTxtReset = function(){
+        var $rdoInp = $(document).find('.msg_rdo_inp');
+        setTimeout(function(){
+            $('.delvy_msg_list li').eq(0).find('input[type="radio"]').attr('checked','checked');
+            if($rdoInp.hasClass('checked')){
+                $rdoInp.removeClass('checked').find('textarea').val('');
+            }
+        },1000)
+    }
+</script>
+</body>
+</html>
