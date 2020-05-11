@@ -445,4 +445,4 @@ body.nav_open .side_nav_wrap {left:0}
 .search_empty div {text-align: center;position: relative;padding-top: 100px ;}
 .search_empty p {position: relative;z-index: 1;}
 .search_empty div:after {content:"";display: block; width: 95px; height:95px; background: url(../images/common/ico_search_02.png) 0 0 no-repeat;background-size: cover;position: absolute;top: 50px;left:50%;transform:translateX(-50%)}
-/* test - test */
+/* test - test2 */
