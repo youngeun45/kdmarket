@@ -1,5 +1,7 @@
 $(function(){
-    headerUI();
+	headerUI();
+	htmlInclude();
+    
     btnUi();
     searchUi();
     tapMotion();
@@ -7,6 +9,29 @@ $(function(){
 	etcUI();
 	layerHeight();
 })
+var htmlInclude = function(){
+	var $elements = $.find('*[data-include-html]');
+	if($elements.length){
+		$.each($elements, function() {
+			var $this =  $(this),
+				$html = $this.data('include-html'),
+				$htmlAry = $html.split('/'),
+				$htmlLast = $htmlAry[$htmlAry.length - 1];
+			
+			$this.load($html,function(res,sta,xhr){
+				if(sta == "success"){
+					console.log('Include '+$htmlLast+'!');
+					$this.children().unwrap();
+					 if($htmlLast == 'header_btm.html'){
+					 	headerUI();
+					 	$(window).resize();
+					 }
+					 if($htmlLast == 'footer.html')footerUI();
+				}
+			});  
+		});
+	}
+};
 var headerUI = function(){
     //top_gnb_swiper
     $(window).load(function(){
@@ -29,31 +54,33 @@ var headerUI = function(){
         $liTxt = $container.find('span'),
         $btmNavi =  $('.header_btm>ul'),
         $pageTit = $('#pageTit');
-    $liTxt.each(function(){
-        if($(this).text() == $tit.text()){
-            $(this).parents('.swiper-slide').addClass('on');
-            tabSwiper.swipeTo($container.find('.swiper-slide.on').index());
-        }
-    })
+		$liTxt.each(function(){
+			if($(this).text() == $tit.text()){
+				$(this).parents('.swiper-slide').addClass('on');
+				tabSwiper.swipeTo($container.find('.swiper-slide.on').index());
+			}
+		})
     /*
     if($pageTit.length > 0 && !$('#container').hasClass('main')){
 		var $current = $.trim($pageTit.text());
 		document.title = $current + ' | 경동시장';			//#pageTit 가 title태그에 삽입
     }
     */
-    // left_gnb_open
-    $('.menu_nav>a').click(function(){
-        $('body').addClass('nav_open');
+	// left_gnb_open
+	$(document).on('click','.menu_nav>a',function(e){
+		e.preventDefault();
+		$('body').addClass('nav_open');
         $btmNavi.find('li.on').removeClass('on')
-        $('.menu_nav').addClass('on')
-    })
-    $('.navClose').click(function(){
+		$(document).find('.menu_nav').addClass('on')
+		
+	})
+	$(document).on('click','.navClose',function(){
         $('body').removeClass('nav_open');
-        $('.menu_nav').removeClass('on')
+		$(document).find('.menu_nav').removeClass('on')
         navUi();
-    })
-    // gnb submenu_open
-    $('.nav_list>ul>li>a').on('click', function(e){
+	})
+	// gnb submenu_open
+	$(document).on('click','.nav_list>ul>li>a',function(e){
 		if(!$(this).hasClass('link')){
 			e.preventDefault();
 			$(this).next('.sub_menu').stop().slideToggle();
@@ -65,7 +92,7 @@ var headerUI = function(){
         $headerH = $('#header').outerHeight(),
         $footerH = $('#footer').innerHeight();
         
-    if($pageTit.text() == '홈' || $pageTit.text() == '상품문의'|| $pageTit.text() == '주문하기' || $pageTit.text() == '회원' || $pageTit.text() == '에러페이지' || $pageTit.hasClass('header_no')){
+    if($pageTit.hasClass('header_no')){
         $('#container').css({
             'min-height':Math.max(0,($winH-$headerH-$footerH))
         });
@@ -81,6 +108,15 @@ var headerUI = function(){
 		location.href=$link;
 	})
 
+}
+var navUi = function(){
+	var $navA = $btmNavi.find('li a');
+    //gnb btm on effect
+    $navA.each(function(){
+        if($(this).text() == $.trim($pageTit.text())){
+            $(this).parent('li').addClass('on');
+        }
+    })
 }
 var spinnerUi = function(max){
 	//spinner
@@ -109,18 +145,7 @@ var spinnerUi = function(max){
 				}
 			});
 		}
-
 	}
-}
-var navUi = function(){
-    var $navA = $btmNavi.find('li a');
-    //gnb btm on effect
-    $navA.each(function(){
-        if($(this).text() == $.trim($pageTit.text())){
-            $(this).parent('li').addClass('on');
-        }
-    })
-    
 }
 var btnUi = function(){
     //btn effect
